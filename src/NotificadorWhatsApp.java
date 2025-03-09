@@ -15,8 +15,8 @@ public class NotificadorWhatsApp {
         try {
 
             Message message = Message.creator(
-                    new PhoneNumber("whatsapp:" + telefone), // ex: whatsapp:+5519987363747
-                    new PhoneNumber("whatsapp:+14155238886"), // O número do Twilio Sandbox
+                    new PhoneNumber("whatsapp:" + telefone),
+                    new PhoneNumber("whatsapp:+14155238886"),
                     mensagem
             ).create();
 
