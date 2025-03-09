@@ -4,8 +4,8 @@ import com.twilio.type.PhoneNumber;
 
 public class NotificadorWhatsApp {
 
-    public static final String ACCOUNT_SID = "ACa68e06a92b14465590c363f40cd8948d";
-    public static final String AUTH_TOKEN = "ce3b0ce24bb86786229d940a87ea0046";
+    public static final String ACCOUNT_SID = "";
+    public static final String AUTH_TOKEN = "";
 
     public NotificadorWhatsApp() {
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
@@ -16,7 +16,7 @@ public class NotificadorWhatsApp {
 
             Message message = Message.creator(
                     new PhoneNumber("whatsapp:" + telefone),
-                    new PhoneNumber("whatsapp:+14155238886"),
+                    new PhoneNumber("whatsapp:+"),
                     mensagem
             ).create();
 
